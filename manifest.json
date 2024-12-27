@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "yovisto Wortmaus Plugin",
+    "version": "1.0",
+    "description": "A simple plugin to prepopulate some fields on the Wortmaus website",
+    "permissions": ["storage", "tabs"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon_16.png"
+    },
+    "icons": {
+        "16": "icon_16.png"      
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

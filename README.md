@@ -1,1 +1,1 @@
-# wort-maus
+# curricula-lod-browser-mem
